@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./js/bootstrap.bundle.js">
+    <script src="https://kit.fontawesome.com/8985bf7deb.js" crossorigin="anonymous"></script>
+    <style>
+        .NavBar {
+            background-color: transparent
+        }
+
+        .nav-link {
+            color: black;
+            font-size: 2rem;
+        }
+
+        .nav-link:hover {
+            color: black;
+            background-color: rgb(182, 175, 175);
+        }
+
+        #navicon {
+            color: black;
+            font-size: 3rem;
+        }
+
+        .navbar-brand :hover {
+            color: black;
+            background-color: gray;
+        }
+
+        .pagination {
+            padding-left: 10px;
+        }
+
+        .pagination li {
+            margin-right: 10px;
+        }
+
+        .pagination a {
+            text-decoration: none;
+        }
+
+        h2 {
+            text-align: center;
+            font-family: cursive;
+            font-weight: 200;
+        }
+
+        p {
+            text-decoration: none;
+            font-size: 20px;
+            font-family: cursive;
+            font-weight: 200;
+        }
+
+        .padding-div button {
+            margin-bottom: 5px;
+            background-color: darkgrey;
+        }
+
+        .padding-div button:hover {
+            background-color: gray;
+        }
+
+        .links a img {
+        width: 50px;
+        height: 50px;
+        }
+
+            h {
+                font-size: 3rem;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <ul class="nav mb-1 justify-content-between NavBar">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                    <i class="fa-solid fa-bars" id="navicon"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">one of my fav animes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">mail</a>
+            </li>
+        </ul>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="./images/gojo.jpg" style="width:100%">
+                    <div class="caption">
+                        <h2> Gojo Satoru</h2>
+                        <p>Satoru Gojo is a fictional character from Gege Akutami's manga Jujutsu Kaisen. He was first
+                            introduced in Akutami's short series Tokyo Metropolitan Curse Technical School as the mentor
+                            of the cursed teenager Yuta Okkotsu at Tokyo Prefectural Jujutsu High School</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="./images/megumi.jpg" style="width:100%">
+                    <div class="caption">
+                        <h2> Fushiguro Megumi</h2>
+                        <p>Megumi Fushiguro is a fictional character of the manga series Jujutsu Kaisen created by Gege
+                            Akutami</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="./images/itadory.jpg" style="width:100%">
+                    <div class="caption">
+                        <h2> Itadory Yuji</h2>
+                        <p>Yuji Itadori is a fictional character and the main protagonist of the manga series Jujutsu
+                            Kaisen created by Gege Akutami</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="./images/nobara.jpg" style="width:100%">
+                    <div class="caption">
+                        <h2> Kugisaki Nobara</h2>
+                        <p>Nobara Kugisaki is a fictional character of the manga series Jujutsu Kaisen created by Gege
+                            Akutami</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="./images/desktop-wallpaper-aoi-todo-todo-aoi.jpg"
+                        style="width:100%">
+                    <div class="caption">
+                        <h2> Aoi Todo</h2>
+                        <p>Aoi Todo is a supporting character in the manga Jujutsu Kaisen. He is a third-year at Jujutsu
+                            Kyoto High, and a Grade-1 sorcerer. He is voiced by Subaru Kimura.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thumbnail">
+                    <img class="img-responsive" src="./images/1284987.jpg" style="width:100%">
+                    <div class="caption">
+                        <h2> Kento Nanami</h2>
+                        <p>ento Nanami is a major character of the 2018 dark fantasy anime and manga series, Jujutsu
+                            Kaisen. He was a grade 1 sorcerer and the mentor of Yuji Itadori.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="pagination pagination-lg justify-content-center">
+            <li><a href="#"><< 1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+            <li><a href="#">5 >></a></li>
+        </ul>
+
+        <div>
+            <p style="text-align: center;">the author of the manga is:</p>
+            <h1 style="text-align: center;">Gege Akutami</h1>
+            <div class="thumbnail">
+                <img class="img-responsive" src="./images/gege akutami.jpg" style="width:90%; padding-left: 200px; height:650px;">
+                <div class="caption">
+                    <h1 style="text-align: center;">about the author</h1>
+                    <p>
+                        Gege Akutami was born in Iwate Prefecture on February 26, 1992. Akutami moved to Sendai in
+                        Miyagi Prefecture in the fifth grade. Akutami began drawing manga by mimicking a friend, which
+                        inspired them to become a professional manga artist. Akutami has named Tite Kubo as an
+                        influence in their work after reading Bleach in the fourth grade, in addition to Hunter × Hunter
+                        and Neon Genesis Evangelion among other works. In 2014, Gege Akutami started working as
+                        assistant to Yasuhiro Kanō in Kiss x Death.
+                        They published their first work the same year, titled "Kamishiro Sōsa" (神代捜査), a one-shot
+                        chapter published in Shueisha's Jump NEXT! vol. on May 7th, 2014. Their next work was
+                        No.9, with a one-shot chapter published in Jump NEXT! vol. 2 on May 1, 2015, and another
+                        one-shot in the 46th issue of Weekly Shōnen Jump on October 10, 2015. Akutami would publish
+                        the one-shot "Nikai Bongai Barabarjura" (二界梵骸バラバルジュラ) in the 2016 44th issue of Weekly Shōnen
+                        Jump, released on October 3, 2016. This one-shot was nominated for the 11th "Gold Future Cup"
+                        contest of the magazine. In 2017, Akutami published Tokyo Metropolitan Curse Technical
+                        School (東京都立呪術高等専門学校, Tōkyō Toritsu Jujutsu Kōtō Senmon Gakkō), a 4-chapter series that ran in
+                        Jump GIGA from April 28 to July 28, 2017. This series would serve later as a prologue to
+                        their next work, Jujutsu Kaisen, being retroactively titled as Jujutsu Kaisen 0. Akutami
+                        began the publication of Jujutsu Kaisen in the 2018 14th issue of Weekly Shōnen Jump, released
+                        on March 5, 2018.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <footer class="row">
+            <div class="col-md-4">
+                <h>more info</h>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque dignissimos unde perspiciatis
+                    quisquam neque minus quae aperiam? Omnis aliquid, vel dolorum impedit molestias nam iste, soluta
+                    necessitatibus unde accusantium ex!</p>
+            </div>
+            <div class="links col-md-4">
+                <h>social accounts</h> <br>
+                <a href="https://twitter.com/Zoldyck0o0?t=sT9LAOZ8_DM2_KsT8qyx3A&s=09" target="_blank"> <img
+                        src="./images/download.png" title="twitter"></a>
+                <a href="https://www.linkedin.com/in/fady-shenoda-6b8098216" target="_blank"><img
+                        src="./images/linkedin.png" title="linkedin"></a>
+                <a href="https://www.facebook.com/fady.shenoda.7792?mibextid=ZbWKwL" target="_blank"><img
+                        src="./images/fb_icon.png" title="facebook"></a>
+            </div>
+            <div class="col-md-4 padding-div">
+                <h>anime categories</h> <br>
+                <button type="button" class="btn btn-md">action</button>
+                <button type="button" class="btn btn-md">fantacy</button>
+                <button type="button" class="btn btn-md">horror</button>
+                <button type="button" class="btn btn-md">drama</button>
+                <button type="button" class="btn btn-md">comidy</button>
+                <button type="button" class="btn btn-md">superPowers</button>
+                <button type="button" class="btn btn-md">sci-fiction</button>
+                <button type="button" class="btn btn-md">romance</button>
+                <button type="button" class="btn btn-md">mecha</button>
+                <button type="button" class="btn btn-md">shounen</button>
+                <button type="button" class="btn btn-md">shojo</button>
+                <button type="button" class="btn btn-md">harem</button>
+            </div>
+            </foote>
+    </div>
+</body>
+
+</html>

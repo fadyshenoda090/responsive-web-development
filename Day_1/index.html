@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout responsive design</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            text-align: center;
+            font-size: 3rem;
+        }
+
+        #nav ul {
+            justify-content: center;
+            list-style: none;
+            display: flex;
+            background-color: purple;
+            color: black;
+        }
+
+        #nav li {
+            padding: 10px;
+        }
+
+        #nav a:hover {
+            background-color: darkorchid;
+            color: black;
+        }
+
+        #container {
+            display: flex;
+        }
+
+        #left {
+            width: 25%;
+            border: 1px solid black;
+        }
+
+        #login,
+        #onlinePages {
+            background-color: aqua;
+            border: 1px solid black;
+            height: 30vh;
+        }
+
+        #sec {
+            height: 80vh;
+            flex-grow: 1;
+            border: 1px solid black;
+            background-color: lightblue;
+        }
+
+        #right {
+            height: 80vh;
+            width: 25%;
+            border: 1px solid black;
+            background-color: skyblue;
+        }
+
+        #photo,
+        #news {
+            height: 40vh;
+            border: 1px solid black;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 3rem;
+        }
+        @media screen and (max-width:768px) {
+            #right{
+                display:none;
+            }
+            #sec{
+                display: flex;
+                flex-grow: 1;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            #left,
+            #right{
+                display: none;
+            }
+            #sec{
+                width: 100%;
+            }
+        }
+        /* @media screen and (max-width:425px) {
+            #container{
+                display: flex;
+                flex-direction: column;
+            }
+            #left,
+            #right,
+            center{
+                width: 100%;
+            }
+        } */
+
+    </style>
+</head>
+
+<body>
+    <header>Website logo</header>
+    <nav id="nav">
+        <ul>
+            <li><a href="#">homepage</a></li>
+            <li><a href="#"> contact us</a></li>
+            <li><a href="#"> about</a></li>
+        </ul>
+    </nav>
+    <div id="container">
+        <aside id="left">
+            <div id="login">
+                login box data
+            </div>
+            <div id="onlinePages">
+                my pages online
+            </div>
+            <div>
+                <iframe src="https://www.youtube.com/embed/YsrBdgmoVhs" style="width: 100%;"></iframe>
+            </div>
+        </aside>
+        <section id="sec">
+            my profile data
+        </section>
+        <aside id="right">
+            <div id="photo">
+                personal photo
+            </div>
+            <div id="news">
+                news bar
+            </div>
+        </aside>
+    </div>
+    <footer>copyrights &copy; are reserved to صيوحة بيه</footer>
+</body>
+
+</html>
